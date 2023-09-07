@@ -114,5 +114,22 @@ namespace BEMoro.Controllers
 				return BadRequest(ex.Message);
 			}
 		}
+
+		[HttpGet("GetDocumentosByEncargadoId")]
+		public async Task<IActionResult> GetDocumentosByEncargadoId(int encargadoId)
+		{
+			try
+			{
+				var documentos = await _context.documento
+					.FromSqlRaw("CALL GetDocumentosByEncargadoId({0})", encargadoId)
+					.ToListAsync();
+
+				return Ok(documentos);
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(ex.Message);
+			}
+		}
 	}
 }
