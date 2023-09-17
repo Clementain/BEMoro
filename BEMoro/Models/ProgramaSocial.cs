@@ -7,6 +7,8 @@ namespace BEMoro.Models
         public int Id { get; set; }
 		[Required]
 		public byte[] Documento { get; set; }
+		[Required]
+		public string Nombre { get; set; }
 
 	}
 }
