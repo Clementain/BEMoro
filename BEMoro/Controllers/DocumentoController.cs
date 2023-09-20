@@ -38,7 +38,7 @@ namespace BEMoro.Controllers
 		{
 			try
 			{
-				var documento = await _context.documento.FindAsync();
+				var documento = await _context.documento.FindAsync(id);
 				if (documento == null)
 				{
 					return NotFound();

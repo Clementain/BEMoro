@@ -39,7 +39,7 @@ namespace BEMoro.Controllers
 		{
 			try
 			{
-				var encargado = await _context.encargado.FindAsync();
+				var encargado = await _context.encargado.FindAsync(id);
 				if (encargado == null)
 				{
 					return NotFound();
