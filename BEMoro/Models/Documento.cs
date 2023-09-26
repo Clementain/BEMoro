@@ -11,7 +11,5 @@ namespace BEMoro.Models
 		public string Nombre { get; set; }
 		[Required]
 		public byte[] ArchivoPdf { get; set; }
-		[Required]
-		public Encargado Encargado { get; set; }
 	}
 }
