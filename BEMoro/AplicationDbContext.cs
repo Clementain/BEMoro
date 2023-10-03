@@ -10,6 +10,7 @@ namespace BEMoro
 		public DbSet<Encargado> encargado { get; set; }
 		public DbSet<ProgramaSocial> programaSocial { get; set; }
 		public DbSet<Vecs> vecs { get; set; }
+		public DbSet<Directorio> directorio { get; set; }
 		public AplicationDbContext(DbContextOptions<AplicationDbContext> options) : base(options)
 		{
 
