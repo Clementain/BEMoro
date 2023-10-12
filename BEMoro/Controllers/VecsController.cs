@@ -1,4 +1,5 @@
 ﻿using BEMoro.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,7 +7,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BEMoro.Controllers
 {
-    [Route("api/[controller]")]
+	[Authorize]
+	[Route("api/[controller]")]
     [ApiController]
     public class VecsController : ControllerBase
     {
