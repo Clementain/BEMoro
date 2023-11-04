@@ -11,6 +11,7 @@ namespace BEMoro
 		public DbSet<ProgramaSocial> programaSocial { get; set; }
 		public DbSet<Vecs> vecs { get; set; }
 		public DbSet<Directorio> directorio { get; set; }
+		public DbSet<Evento> evento { get; set; }
 		public AplicationDbContext(DbContextOptions<AplicationDbContext> options) : base(options)
 		{
 

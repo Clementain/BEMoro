@@ -8,8 +8,10 @@ namespace BEMoro.Models
 		[Required]
 		public string Tipo { get; set; }
 		[Required]
-		public byte[]  Imagen { get; set; }
+		public byte[] Imagen { get; set; }
 		[Required]
 		public string Descripcion { get; set; }
+		[Required]
+		public string Direccion { get; set; }
 	}
 }
